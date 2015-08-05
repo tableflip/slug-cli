@@ -25,7 +25,7 @@ slug *
 will rename the lot. It'll only go one level deep, and it'll indiscriminately rename files and directories. Use with `find` for more elaborate requirements
 
 ```sh
-find . -name "*.JPG" -exec dash {} \;
+find . -name "*.JPG" -exec slug {} \;
 ```
 
 Go forth and `slug`.
