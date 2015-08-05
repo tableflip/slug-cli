@@ -1,3 +1,35 @@
+
+# slug cli: slugify for filenames
+
+Some people don't have standards when it comes to naming files.
+
+**YOU ARE BETTER THAN THAT**
+
+`slug` renames files, turning nonsense into sense, like this:
+
+```sh
+slug 'Some_Client : BIG SCREEN layout.JPG'
+
+# will rename the file to
+some-client-big-screen-layout.jpg
+```
+
+Grinding all your unruly filenames into dasherized, lowercase, lower-ascii perfection.
+
+**Got a dir full of bad filenames?**
+
+```sh
+slug *
+```
+
+will rename the lot. It'll only go one level deep, and it'll indiscriminately rename files and directories. Use with `find` for more elaborate requirements
+
+```sh
+find . -name "*.JPG" -exec dash {} \;
+```
+
+Go forth and `slug`.
+
 ```
          ___
         /\_ \
@@ -7,22 +39,5 @@
 \/\____/   /\____\ \ \____/\ \____ \
  \/___/    \/____/  \/___/  \/___L\ \
                               /\____/
-                              \_/__/ 
-```
-
-
-# slug cli: slugify for filenames
-
-Some people don't have standards when it comes to naming files.
-
-**YOU ARE BETTER THAN THAT**
-
-`slug` is a command line tool to bring the beautiful uniformity of `slugify` to the cli.
-Grind your unruly filenames into `dasherized`, lowercased perfection.
-
-`slug` renames files, turning nonsense into sense, like this:
-
-```sh
-slug Some_Client : BIG SCREEN layout.JPG
-some-client-big-screen-layout.jpg
+                              \_/__/
 ```
