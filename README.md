@@ -8,9 +8,13 @@ Some people don't have standards when it comes to naming files.
 `slug` renames files, turning nonsense into sense, like this:
 
 ```sh
+# get slug
+npm install -g slug
+
+# use slug
 slug 'Some_Client : BIG SCREEN layout.JPG'
 
-# will rename the file to
+# be slug
 some-client-big-screen-layout.jpg
 ```
 
